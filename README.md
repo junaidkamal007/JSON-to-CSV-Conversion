@@ -9,32 +9,23 @@ This project solves that problem by providing a simple command-line tool that au
 Features
 
 Convert JSON → CSV
-
 Convert CSV → JSON
 
 Easy user interface in the command line
-
 Validates file paths and reports errors gracefully
 
 How to Run
 Prerequisites
 
 Make sure you have:
-
 Python 3.6 or higher installed
-
 The standard json, csv, and os modules (included with Python)
 
 Running the Script
-
 Clone or download this repository.
-
 Open a terminal or command prompt.
-
 Navigate to the project directory.
-
 Run the script:
-
 python your_script_name.py
 
 
@@ -48,6 +39,8 @@ Press 3 to exit.
 
 You will be prompted for input and output file paths.
 
+
+
 Example Usage
 
 Convert JSON to CSV
@@ -57,11 +50,14 @@ Enter the CSV file path: employees.csv
 Successfully converted JSON into CSV
 
 
+
 Convert CSV to JSON
 
 Enter the CSV file path: employees.csv
 Enter the JSON file path: students.json
 Successfully converted CSV into JSON
+
+
 
 Design Decisions
 
@@ -85,11 +81,17 @@ Readable Output
 
 JSON output is formatted with indentation for readability when converting from CSV.
 
+
+
+
 Limitations & Notes
 
 The JSON-to-CSV converter expects a JSON array at the top level. Nested objects or inconsistent keys may result in unexpected output.
 
 The CSV-to-JSON converter treats each row as a dictionary with headers as keys.
+
+
+
 
 Future Improvements
 
